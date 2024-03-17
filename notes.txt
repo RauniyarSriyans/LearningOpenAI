@@ -1,0 +1,57 @@
+# Prompt Design 
+
+1. A prompt is a sentence or two that describes the task you are asking the user to perform. A completion is a sentence or two
+ that the model writes in response to the prompt.
+2. There are different types of prompt design. Zero shot, one shot and few shot prompting are techniques that can be used to 
+get better or faster results from a large language model like GPT:
+- Zero shot prompting is where a model makes predictions without being given any examples for training
+- One shot prompting is where a model is given a single example for training
+- Few shot prompting uses a small number of examples for training (usually between two and five examples)
+
+# Fine Tuning 
+
+1. Fine tuning is the process of training a model on a specific task or dataset. This can be done by taking a pre-trained model and
+training it on a new dataset, or by training a model from scratch.
+2. Fine tuning can be used to improve the performance of a model on a specific task, or to adapt a model to a new dataset.
+3. Fine tuning can be done by adjusting the weights of the model, or by adding new layers to the model.
+4. Need several hundred examples to fine tune a model. 
+
+ChatGPT, Cohere.ai, Llama, Gemini are some of the few shot models.The best model for a specific task depends on the task and the
+amount of data available for training. Currently, GPT-3 is the most widely used model for few shot learning.
+
+# Tokens
+1. A token is a single unit of text, such as a word or a punctuation mark.
+2. Tokens are the basic building blocks of natural language processing. They are used to represent the words and 
+symbols in a piece of text.
+3. Tokens are used to train language models, which are used to generate text, answer questions, and perform other natural language
+processing tasks.
+Exmaple: "The quick brown fox jumps over the lazy dog" has 9 tokens.
+
+# Temperature vs seed 
+1. Temperature is a hyperparameter that controls the randomness of the model's output. A higher temperature makes the model's output
+more random, while a lower temperature makes the output more deterministic.
+2. Seed is a number that is used to initialize the random number generator. It is used to ensure that the model's output is
+reproducible.
+
+# top-p
+1. Top-p sampling is a technique used to generate text with a language model. It works by selecting the most likely tokens from the
+model's output, based on a probability threshold.
+2. Top-p sampling is used to control the diversity of the model's output. A higher p value will result in more diverse output, while
+a lower p value will result in more conservative output.
+3. Top-p sampling is used to prevent the model from generating nonsensical or repetitive text.
+
+# Frequency penalty
+1. Frequency penalty is a hyperparameter that controls the likelihood of the model repeating the same tokens in its output.
+2. Frequency penalty is used to prevent the model from generating repetitive or nonsensical text.
+3. For gpt, the value is between -2 and 2. A higher value will result in less repetitive output, while a lower value will result in
+more repetitive output.
+
+# Guidelines for prompting
+1. Use the very latest model. 
+2. Write clear and specific instructions (most important)
+Tactic 1 -- Put instructions at the beginning of the prompt, each on their own line, and use delimiter to separate distinct
+parts of the prompt. 
+Tactic 2 -- Be specific, descriptive, and as detailed as possible about the desired context, outcome, or length. 
+Tactic 3 -- User RTF format --> Role, Task, Format
+Tactic 4 -- Use few shot prompting
+Tactic 5 -- Specify the steps required to complete the task
