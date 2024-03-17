@@ -1,3 +1,5 @@
+# All codes are in Google Colab. Refer to google colab for the code.
+
 # Prompt Design 
 
 1. A prompt is a sentence or two that describes the task you are asking the user to perform. A completion is a sentence or two
